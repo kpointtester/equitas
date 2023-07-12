@@ -1,0 +1,559 @@
+<div
+  data-video-host="ccoe.kpoint.com"
+  data-kvideo-id="gcc-f5fb16bb-982e-4b23-a269-16091ece797d"
+  style="width: min(100vw, calc(100vh * 1.777))"
+  data-video-params='{"autoplay":true,"resume":false,"autoplay":true,"muted":"false","loop":false,"search":false,"like":false,  "playercontrols": {
+	 "hide": ""
+  },"add-widgets":"utils,markup,fontloader,customform,kp_branching"}'
+  data-widgets-config='{
+	 "markup": {
+    "list": [
+      {
+        "start_time": 4,
+        "end_time": 12,
+        "template": "#screen-1",
+        "animations": [
+          {
+            "target": ".screen-1-card .line-1 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(2)",
+              "stagger": 0.01
+            }
+          },
+          {
+            "target": ".screen-1-card .line-2 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(3)",
+              "stagger": 0.02
+            }
+          },
+          {
+            "target": ".screen-1-card .horizontal-line",
+            "from": {
+              "width": "0"
+            },
+            "to": {
+              "width": "100%"
+            },
+            "duration": 0.5
+          },
+          {
+            "target": ".screen-1-card .line-3 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(2)",
+              "stagger": 0.01
+            }
+          },
+          {
+            "target": ".screen-1-card .line-4 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(2)",
+              "stagger": 0.01
+            }
+          }
+        ]
+      },
+      {
+        "start_time": 13,
+        "end_time": 20,
+        "template": "#screen-2",
+        "animations": [
+          {
+            "target": ".screen-2-card .line-1 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(2)",
+              "stagger": 0.01
+            }
+          },
+          {
+            "target": ".screen-2-card .horizontal-line",
+            "from": {
+              "width": "0"
+            },
+            "to": {
+              "width": "100%"
+            },
+            "duration": 0.5
+          },
+          {
+            "target": ".screen-2-card .account-details span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(2.5)",
+              "stagger": 0.008
+            }
+          }
+        ]
+      }
+    ]
+  },
+  
+	 "fontloader": {
+		"list": [{
+		  "name": "Montserrat",
+		  "google": {
+			 "styles": []
+		  }
+		}]
+	 },
+   "kp_branching":{
+    "list": [
+      {
+        "start_time": 24,
+        "end_time": 34,
+        "branchList": [
+          {
+            "start_time": 30,
+            "end_time": 60
+          },
+          {
+            "start_time": 61,
+            "end_time": 90
+          },
+          {
+            "start_time": 91,
+            "end_time": 120
+          },
+          {
+            "start_time": 121,
+            "end_time": 150
+          },
+          {
+            "start_time": 151,
+            "end_time": 180
+          }
+        ],
+        "animations": {
+          "enter": [
+            {
+              "target": ".kpw-branch",
+              "from": {
+                "scale": 1
+              },
+              "duration": 0.4,
+              "to": {
+                "scale": 1.08,
+                "stagger": {
+                  "each": 1,
+                  "repeat": 1,
+                  "yoyo": true
+                }
+              }
+            }
+          ],
+          "revisit": [],
+          "branch_hover": [
+            {
+              "duration": 0.1,
+              "to": {
+                "scale": 1.05
+              }
+            }
+          ],
+          "branch_unhover": [
+            {
+              "duration": 0.1,
+              "to": {
+                "scale": 1
+              }
+            }
+          ],
+          "branch_select": [
+            {
+              "duration": 0.2,
+              "from": {
+                "border": "0px solid #fff"
+              },
+              "to": {
+                "borderWidth": "2px",
+                "scale": 1
+              }
+            }
+          ],
+          "home_button_enter": [
+            {
+              "target": ".kpw-branch-home-button",
+              "from": {
+                "scale": 0
+              },
+              "duration": 0.3,
+              "to": {
+                "scale": 1
+              }
+            }
+          ],
+          "home_button_revisit": [],
+          "home_button_hover": [
+            {
+              "duration": 0.1,
+              "to": {
+                "scale": 1.05
+              }
+            }
+          ],
+          "home_button_unhover": [
+            {
+              "duration": 0.1,
+              "to": {
+                "scale": 1
+              }
+            }
+          ],
+          "home_button_select": [
+            {
+              "duration": 0.5,
+              "from": {
+                "border": "0px solid black"
+              },
+              "to": {
+                "borderWidth": "2px",
+                "scale": 1
+              }
+            }
+          ]
+        },
+        "template": "branching-template-1",
+        "home_button_template": "home-button-template-1",
+        "behaviour": "loop"
+      }
+    ]
+  }
+  }'
+></div>
+
+<div id="screen-1" style="display: none">
+  <div class="screen">
+    <div class="screen-card screen-1-card">
+      <div class="name-container">
+        <div kpw-split-by="letters" class="line-1">Hello</div>
+        <div kpw-split-by="letters" class="name line-2">Pankaj Joshi</div>
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="message">
+        <div kpw-split-by="letters" class="line-3">Welcome to Equitas</div>
+        <div kpw-split-by="letters" class="line-4">Small Finance Bank</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="screen-2" style="display: none">
+  <div class="screen">
+    <div class="screen-card screen-2-card">
+      <div class="account-details-header font-weight-bolder">
+        <div kpw-split-by="letters" class="line-1">
+          Your Elite Account Details
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="account-details">
+        <div class="account-details-row font-weight-bolder">
+          <div kpw-split-by="letters" class="line-2">Customer ID - EA01234</div>
+        </div>
+        <div class="account-details-row font-weight-bolder">
+          <div kpw-split-by="letters" class="line-3">A/C No - 987654321</div>
+        </div>
+        <div class="account-details-row font-weight-bolder">
+          <div kpw-split-by="letters" class="line-4">
+            A/C Opening Date - 07 June 2021
+          </div>
+        </div>
+        <div class="account-details-row">
+          <div kpw-split-by="letters" class="line-5">
+            Debit Card details - XXX XXXXX XXXX
+          </div>
+        </div>
+        <div class="account-details-row">
+          <div kpw-split-by="letters" class="line-6">
+            Email Id - radhika.bhola@kpoint.com
+          </div>
+        </div>
+        <div class="account-details-row">
+          <div kpw-split-by="letters" class="line-7">
+            Address - H Block Gandhi park, Surat Gujara
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="branching-template-1" style="display: none">
+  <div class="kpw-container">
+    <div class="kpw-branching-container">
+      <div class="kpw-branch" data-index="0" data-track-score="10">
+        <i class="fad fa-hand-receiving primary-icon"></i>
+        <div>
+          Schedule of Charges
+          <i class="fas fa-chevron-right secondary-icon"></i>
+        </div>
+      </div>
+      <div class="kpw-branch" data-index="1" data-track-score="10">
+        <i class="fad fa-user-cog primary-icon"></i>
+        <div>
+          Set Your Account
+          <i class="fas fa-chevron-right secondary-icon"></i>
+        </div>
+      </div>
+      <div class="kpw-branch" data-index="2" data-track-score="10">
+        <i class="fad fa-rupee-sign primary-icon"></i>
+        <div>
+          Schedule of Charges
+          <i class="fas fa-chevron-right secondary-icon"></i>
+        </div>
+      </div>
+      <div class="kpw-branch" data-index="3" data-track-score="10">
+        <div
+          class="primary-icon"
+          style="display: block; margin-top: calc(-3 * var(--pw))"
+        >
+          <i class="fad fa-phone-alt"></i>
+          <i class="fad fa-mail-bulk"></i>
+          <i class="fad fa-comment-alt-smile"></i>
+        </div>
+        <div>
+          Get In Touch
+          <i class="fas fa-chevron-right secondary-icon"></i>
+        </div>
+      </div>
+      <div
+        class="kpw-branch"
+        style="
+          grid-area: 3 / 1 / 4 / 3;
+          width: 100%;
+          height: calc(12 * var(--pw));
+        "
+        data-index="4"
+        data-track-score="10"
+      >
+        <div
+          style="
+            width: calc(78.5 * var(--pw));
+            line-height: 1;
+            margin-bottom: calc(1 * var(--pw));
+          "
+        >
+          Beyound Banking - <br />
+          Know how your money crates an impact
+          <i class="fas fa-chevron-right secondary-icon align-self-end"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="home-button-template-1" style="display: none">
+  <div class="kpw-branch-home-button">Back</div>
+</div>
+
+<style>
+  .screen {
+    background-color: rgba(0, 0, 0, 0.01);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    backdrop-filter: blur(5px) brightness(0.7);
+  }
+
+  .screen .screen-card {
+    display: inline-block;
+    line-height: 1.2;
+  }
+  .screen .screen-card [kpw-split-by] {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .screen span {
+    display: inline-block;
+    transform-style: preserve-3d;
+    white-space: break-spaces;
+    line-height: 1em;
+  }
+  .screen .name-container {
+    font-size: calc(6 * var(--pw));
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+  }
+  .screen .message {
+    font-size: calc(4 * var(--pw));
+    display: flex;
+    flex-direction: column;
+  }
+
+  .screen .account-details-header {
+    font-size: calc(5 * var(--pw));
+  }
+
+  .screen .account-details-row {
+    font-size: calc(3 * var(--pw));
+    margin-bottom: calc(1 * var(--pw));
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .name {
+    position: relative;
+  }
+  .horizontal-line {
+    width: 100%;
+    height: calc(0.4 * var(--pw));
+    background-image: linear-gradient(
+        to right,
+        rgba(207, 30, 47, 1) 80%,
+        rgba(207, 30, 47, 1) 80%
+      ),
+      linear-gradient(
+        to right,
+        rgba(27, 67, 139, 1) 20%,
+        rgba(27, 67, 139, 1) 20%
+      );
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: 60% 100%, 40% 100%;
+  }
+  .screen-1-card .horizontal-line {
+    margin-top: calc(2 * var(--pw));
+    margin-bottom: calc(2 * var(--pw));
+  }
+
+  .screen-2-card .horizontal-line {
+    margin-top: calc(1.5 * var(--pw));
+    margin-bottom: calc(1.5 * var(--pw));
+  }
+
+  .kpw-container {
+    background-color: rgba(0, 77, 128, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    backdrop-filter: blur(5px) brightness(0.6);
+  }
+  .kpw-branching-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    height: calc(45 * var(--pw));
+    width: calc(80 * var(--pw));
+    padding: calc(1.8 * var(--pw));
+    font-size: calc(var(--pw) * 2);
+    gap: calc(var(--pw) * 2);
+  }
+  .kpw-branch {
+    cursor: pointer;
+    pointer-events: visible;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    border-radius: calc(1 * var(--pw));
+    border: min(calc(0.2 * var(--pw)), 1.5px) solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0px 0px calc(0.5 * var(--pw)) rgba(0, 0, 0, 0.2);
+    background-color: rgba(250, 0250, 250, 0.06);
+    /* backdrop-filter: brightness(0.8); */
+    font-size: calc(var(--pw) * 3);
+    height: calc(15 * var(--pw));
+    width: calc(40 * var(--pw));
+    padding: calc(0.5 * var(--pw)) calc(1.5 * var(--pw));
+    user-select: none;
+  }
+
+  .kpw-branch-home-button {
+    width: calc(15 * var(--pw));
+    height: calc(5 * var(--pw));
+    background-color: rgba(207, 30, 47, 0.9);
+    border-radius: calc(1 * var(--pw));
+    margin-top: calc(2 * var(--pw));
+    margin-left: calc(2 * var(--pw));
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: visible;
+    user-select: none;
+    font-size: calc(var(--pw) * 3);
+  }
+
+  .primary-icon {
+    /* position: absolute;
+        top: calc(1.5 * var(--pw));
+        left: calc(1.5 * var(--pw)); */
+    align-self: start;
+    justify-self: start;
+    margin-top: calc(1.5 * var(--pw));
+    font-size: calc(var(--pw) * 4);
+  }
+  .kpw-branch > div {
+    align-self: end;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(37 * var(--pw));
+  }
+
+  @media only screen and (max-width: 450px) {
+    .primary-icon {
+      display: none !important;
+    }
+    .kpw-branch > div {
+      height: 100%;
+      font-size: calc(3.3 * var(--pw));
+    }
+
+    .kpw-branch .secondary-icon {
+      align-self: end;
+      margin-bottom: calc(0.5 * var(--pw));
+    }
+  }
+</style>
+
+<script
+  type="text/javascript"
+  src="https://assets.zencite.com/orca/media/embed/videofront-vega.js"
+></script>
+
+<script src="assets/branchinglocalView.js"></script>
+<script src="assets/branchinglocalWidget.js"></script>

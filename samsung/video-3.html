@@ -1,0 +1,500 @@
+<div
+  data-video-host="ccoe.kpoint.com"
+  data-kvideo-id="gcc-b751c5e1-e111-4baa-b432-9aaca4f0f09e"
+  style="width: min(100vw, calc(100vh * 1.777))"
+  data-video-params='{"autoplay":true,"resume":false,"autoplay":true,"muted":"false","loop":false,"search":false,"like":false,  "playercontrols": {
+	 "hide": "all"
+  },"add-widgets":"utils,markup,fontloader,crmform"}'
+  data-widgets-config='{
+	 "markup": {
+    "list": [
+      {
+        "start_time": 1,
+        "end_time": 12,
+        "template": "#screen-1",
+        "animations": [
+          {
+            "target": ".screen-1-card .line-1 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(3)",
+              "stagger": 0.02
+            }
+          },
+          {
+            "target": ".screen-1-card .line-2 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(2)",
+              "stagger": 0.01
+            }
+          },
+          {
+            "target": ".screen-1-card .line-3 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(2)",
+              "stagger": 0.01
+            }
+          },
+          {
+            "target": ".screen-1-card .line-4 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(2)",
+              "stagger": 0.01
+            }
+          },
+          {
+            "target": ".screen-1-card .line-5 span",
+            "from": {
+              "y": "1.1em"
+            },
+            "to": {
+              "y": 0,
+              "ease": "Back.easeOut.config(2)",
+              "stagger": 0.01
+            }
+          }
+        ]
+      },
+      {
+        "start_time": 28,
+        "end_time": 200,
+        "template": "#screen-2"
+      },
+      {
+        "start_time": 33,
+        "end_time": 42,
+        "template": "#screen-3"
+      },
+      {
+        "start_time": 57,
+        "end_time": 64,
+        "template": "#template-1",
+        "animations":[
+        {
+          "target": ".widget-container",
+          "from": { "opacity": 0 },
+          "duration": 1.5,
+          "to": { "opacity": "1" }
+          }]
+      }
+    ]
+  },
+	 "fontloader": {
+		"list": [{
+		  "name": "Montserrat",
+		  "google": {
+			 "styles": []
+		  }
+		}]
+	 }
+  }'
+></div>
+
+<div id="screen-1" style="display: none">
+  <div class="screen">
+    <div class="screen-card screen-1-card">
+      <div class="name-container">
+        <div kpw-split-by="letters" class="name line-1">Hello Aditya</div>
+      </div>
+      <div class="message">
+        <div kpw-split-by="letters" class="line-2">Welcome to the Employee</div>
+        <div kpw-split-by="letters" class="line-3">
+          Purchase Program by Samsung.
+        </div>
+        <div kpw-split-by="letters" class="line-4">
+          We have something exciting
+        </div>
+        <div kpw-split-by="letters" class="line-5">
+          to tell you, lets explore!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="screen-2" style="display: none">
+  <div class="screen-2-card">
+    <div
+      class="kpw-action-button"
+      data-type="link"
+      data-url="https://www.samsung.com/in/epp"
+      style="pointer-events: visible"
+    >
+      www.samsung.com/in/epp
+    </div>
+  </div>
+</div>
+<div id="screen-3" style="display: none">
+  <div class="hidden-container">
+    <div
+      class="kpw-action-button"
+      data-url="product-cards"
+      data-type="custom"
+    ></div>
+  </div>
+  <dialog class="screen-3-dialog">
+    <div class="product-cards" id="product-cards">
+      <div
+        class="product-card kpw-action-button"
+        data-type="link"
+        data-url="https://www.samsung.com/in/multistore/corporate/galaxy-z-fold4/buy/"
+      >
+        <img
+          src="https://images.samsung.com/is/image/samsung/assets/in/multistore/corporate/smartphones/updated-fold4-330x330px.jpg?$330_330_JPG$"
+          alt=""
+        />
+        <div>Galaxy Z Fold 4</div>
+      </div>
+      <div
+        class="product-card kpw-action-button"
+        data-type="link"
+        data-url="https://www.samsung.com/in/multistore/corporate/finder.smartphones.html?galaxy-z"
+      >
+        <img
+          src="https://images.samsung.com/is/image/samsung/assets/in/multistore/corporate/smartphones/updated-fold3-330x330px.jpg?$330_330_JPG$"
+          alt=""
+        />
+        <div>Galaxy Fold 3</div>
+      </div>
+      <div
+        class="product-card kpw-action-button"
+        data-type="link"
+        data-url="https://www.samsung.com/in/multistore/corporate/galaxy-z-flip4/buy/"
+      >
+        <img
+          src="https://images.samsung.com/is/image/samsung/assets/in/multistore/corporate/smartphones/flip4-330x330px.jpg?$330_330_JPG$"
+          alt=""
+        />
+        <div>Galaxy Flip4</div>
+      </div>
+    </div>
+  </dialog>
+</div>
+
+<div id="template-1" style="display: none">
+  <div class="w-100 h-100 row m-0 justify-content-end">
+    <div
+      class="col-6 m-0 p-0"
+      style="
+        /* background-color: rgba(0, 0, 0, 0.4); */
+        background-color: white;
+        z-index: 1;
+        backdrop-filter: blur(0.8px);
+      "
+    >
+      <div class="widget-container row m-0 h-100" style="">
+        <div class="products-header">
+          Start shopping by just clicking on the appliance of your choice
+        </div>
+        <div class="container">
+          <a
+            href="https://www.samsung.com/in/multistore/corporate/finder.refrigerators/"
+            class="template1-card"
+            target="_blank"
+          >
+            <img src="refrigerator.png" alt="Refrigerators" />
+          </a>
+          <a
+            href="https://www.samsung.com/in/multistore/corporate/finder.refrigerators/"
+            class="template1-card"
+            target="_blank"
+          >
+            <img src="ac.png" alt="ACs" /> </a
+          ><a
+            href="https://www.samsung.com/in/multistore/corporate/finder.washers-and-dryers/"
+            class="template1-card"
+            target="_blank"
+          >
+            <img src="washing-machine.png" alt="Washing machines" /> </a
+          ><a
+            href="https://www.samsung.com/in/multistore/corporate/tvs/"
+            class="template1-card"
+            target="_blank"
+          >
+            <img src="./tv.png" alt="TVs" /> </a
+          ><a
+            href="https://www.samsung.com/in/multistore/corporate/smartwatches/"
+            class="template1-card"
+            target="_blank"
+          >
+            <img src="watch.png" alt="laptops" /> </a
+          ><a
+            href="https://www.samsung.com/in/multistore/corporate/smartphones/"
+            class="template1-card"
+            target="_blank"
+          >
+            <img src="phone.png" alt="pohone" />
+          </a>
+        </div>
+        <hr />
+        <div class="products-header">
+          Login with your corporate email ID and get huge discounts.
+        </div>
+        <div
+          class="button-container kpw-action-button"
+          data-type="link"
+          data-url="https://www.samsung.com/in/web/b2b-login/corporate/?redirect_url=https%3A%2F%2Fwww.samsung.com%2Fin%2Fmultistore%2Fcorporate%2Foffer%2F"
+        >
+          <div class="t1-button">Explore EPP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hidden-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .hidden-container > .kpw-action-button {
+    width: calc(6 * var(--pw));
+    height: calc(11 * var(--pw));
+    top: calc(23 * var(--pw));
+    left: calc(5 * var(--pw));
+    position: absolute;
+    pointer-events: visible;
+    cursor: pointer;
+  }
+
+  .screen-3-dialog {
+    border: 0;
+    margin-top: calc(4 * var(--pw));
+    width: calc(50 * var(--pw));
+    border-radius: calc(2 * var(--pw));
+    height: calc(18 * var(--pw));
+    box-shadow: calc(1 * var(--pw)) calc(1 * var(--pw)) calc(2 * var(--pw))
+      rgba(0, 0, 0, 0.2);
+    right: calc(40 * var(--pw));
+  }
+  .product-cards {
+    display: flex;
+    gap: calc(2 * var(--pw));
+  }
+
+  .product-card {
+    width: calc(15 * var(--pw));
+    aspect-ratio: 1/1;
+    border-radius: calc(2 * var(--pw));
+    color: black;
+    pointer-events: visible;
+    cursor: pointer;
+  }
+  .product-card > img {
+    width: 100%;
+    height: 100%;
+    border-radius: calc(2 * var(--pw));
+  }
+  .product-card > div {
+    position: relative;
+    top: calc(-4 * var(--pw));
+    left: calc(1.5 * var(--pw));
+  }
+
+  .screen-2-card {
+    color: #4b6e94;
+    font-size: calc(2 * var(--pw));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: calc(0.2 * var(--pw));
+    width: 100%;
+  }
+  .screen-2-card > div {
+    background-color: #e1eefe;
+    border-radius: calc(2 * var(--pw));
+    width: calc(27 * var(--pw));
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .screen {
+    /* background-color: rgba(0, 0, 0, 0.01); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    /* backdrop-filter: blur(5px) brightness(0.7); */
+  }
+
+  .screen .screen-card {
+    display: inline-block;
+    /* line-height: 1.2; */
+    width: 66%;
+    height: 100%;
+    padding-top: calc(4 * var(--pw));
+  }
+  .screen .screen-card [kpw-split-by] {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .screen span {
+    display: inline-block;
+    transform-style: preserve-3d;
+    white-space: break-spaces;
+    line-height: 1em;
+  }
+  .screen .name-container {
+    font-size: calc(6 * var(--pw));
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+  }
+  .screen .message {
+    font-size: calc(3.7 * var(--pw));
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(2 * var(--pw));
+  }
+
+  .screen .account-details-header {
+    font-size: calc(5 * var(--pw));
+  }
+
+  .screen .account-details-row {
+    font-size: calc(3 * var(--pw));
+    margin-bottom: calc(1 * var(--pw));
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .name {
+    position: relative;
+  }
+  .horizontal-line {
+    width: 100%;
+    height: calc(0.4 * var(--pw));
+    background-image: linear-gradient(
+        to right,
+        rgba(207, 30, 47, 1) 80%,
+        rgba(207, 30, 47, 1) 80%
+      ),
+      linear-gradient(
+        to right,
+        rgba(27, 67, 139, 1) 20%,
+        rgba(27, 67, 139, 1) 20%
+      );
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: 60% 100%, 40% 100%;
+  }
+  .screen-1-card .horizontal-line {
+    margin-top: calc(2 * var(--pw));
+    margin-bottom: calc(2 * var(--pw));
+  }
+
+  .screen-2-card .horizontal-line {
+    margin-top: calc(1.5 * var(--pw));
+    margin-bottom: calc(1.5 * var(--pw));
+  }
+
+  .products-header {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: calc(2 * var(--pw));
+    margin-right: calc(2 * var(--pw));
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: calc(1 * var(--pw));
+    grid-row-gap: calc(1 * var(--pw));
+    margin-top: calc(2 * var(--pw));
+  }
+  .template1-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #00b5af24; */
+    border: 1px solid #00b5af24;
+    border-radius: 1vh;
+    width: calc(10 * var(--pw));
+    /* height: calc(15 * var(--pw)); */
+    aspect-ratio: 1/1;
+    margin-left: calc(3.5 * var(--pw));
+    pointer-events: visible;
+    cursor: pointer;
+  }
+  .template1-card > img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 1vh; */
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  .t1-button {
+    background-color: black;
+    color: white;
+    border-radius: calc(0.5 * var(--pw));
+    height: calc(3 * var(--pw));
+    width: calc(15 * var(--pw));
+    margin-top: calc(2 * var(--pw));
+    margin-right: calc(2 * var(--pw));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: visible;
+  }
+  .button-container {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+  }
+</style>
+
+<script
+  type="text/javascript"
+  src="https://assets.zencite.com/orca/media/embed/videofront-vega.js"
+></script>
+
+<script>
+  document.addEventListener("kpw-onclick-button", (e) => {
+    console.log(e.detail);
+    if (e.detail.url == "product-cards") {
+      var dialog = document.querySelector(".screen-3-dialog");
+      dialog.show();
+
+      dialog.addEventListener("click", (event) => {
+        console.log(event.target);
+        if (event.target.id !== "product-cards") {
+          dialog.close();
+        }
+      });
+    }
+  });
+</script>

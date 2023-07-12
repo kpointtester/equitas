@@ -1,0 +1,308 @@
+<div
+  data-video-host="ccoe.kpoint.com"
+  data-kvideo-id="gcc-f5fb16bb-982e-4b23-a269-16091ece797d"
+  style="width: min(100vw, calc(100vh * 1.777))"
+  data-video-params='{"autoplay":true,"loop":true,"resume":false,"autoplay":true,"offset":4000,"muted":"true","loop":"false","search":false,"like":false,"showPlayIconOnMobile":false,  "playercontrols": {
+	 "hide": "all"
+  },"add-widgets":"utils,markup,fontloader,customform"}'
+  data-widgets-config='{
+	 "markup": {
+    "list": [
+      {
+        "start_time": 4,
+        "end_time": 1200,
+        "template": "#screen-1",
+        "animations": [
+          ],
+        "callback":"screen4"
+      }]
+  },
+  
+	 "fontloader": {
+		"list": [{
+		  "name": "Montserrat",
+		  "google": {
+			 "styles": []
+		  }
+		}]
+	 }
+  }'
+></div>
+
+<div id="screen-1" style="display: none">
+  <div class="screen">
+    <div class="screen-1-header">
+      <i
+        class="far fa-hand-receiving"
+        style="margin-right: calc(3 * var(--pw))"
+      ></i>
+      Benefits - Elite Savings Account
+    </div>
+    <div class="screen-card screen-1-card">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="swiper-slide-text">
+              <div class="swiper-slide-icon">
+                <img src="./Icons/umbrella.png" alt="" />
+              </div>
+              <div class="primary-slide-text">
+                Enrolment-based Insurance coverage
+              </div>
+              <div class="secondary-slide-text">
+                60 lakhs for Air accident<br />
+                20 lakhs for Personal accident<br />
+                10 lakhs Home and fire content.
+              </div>
+            </div>
+            <div class="swiper-slide-button enrollment-slide-button">
+              Tap here to enroll
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-text">
+              <div class="swiper-slide-icon">
+                <img src="./Icons/golf.png" alt="" />
+              </div>
+              <div class="primary-slide-text">Book Golf sessions</div>
+              <div class="secondary-slide-text">
+                Toll Free Number<br />
+                1800-102-6263
+              </div>
+            </div>
+            <div class="swiper-slide-button">Tap here to call</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-text">
+              <div class="swiper-slide-icon">
+                <img src="./Icons/health.png" alt="" />
+              </div>
+              <div class="primary-slide-text">Health benefits</div>
+              <div class="secondary-slide-text">
+                Tele-consultation<br />
+                In-person consultation. <br />
+                Discounts on medicines.
+              </div>
+            </div>
+            <div class="swiper-slide-button">Tap here to register</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-text">
+              <div class="swiper-slide-icon">
+                <img src="./Icons/banking.png" alt="" />
+              </div>
+              <div class="primary-slide-text">
+                Priority access to Phone banking
+              </div>
+              <div class="secondary-slide-text">
+                Toll Free Number<br />
+                1800 103 1222
+              </div>
+            </div>
+            <div class="swiper-slide-button">Tap here to save</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-text">
+              <div class="swiper-slide-icon">
+                <img src="./Icons/relationship-manager.png" alt="" />
+              </div>
+              <div class="primary-slide-text">
+                Dedicated relationship Manager
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-text">
+              <div class="swiper-slide-icon">
+                <img src="./Icons/Picture6.png" alt="" />
+              </div>
+              <div class="primary-slide-text">Flat 50% locker discount</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.screen4 = {
+    onRender: () => {
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          enabled: true,
+        },
+        breakpoints: {
+          "@0.75": {
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+          },
+        },
+        slidesPerGroup: 1,
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    },
+  };
+</script>
+
+<style>
+  .screen {
+    --swiper-width: calc(80 * var(--pw));
+    --swiper-height: 100%;
+    --swiper-pagination-bullet-inactive-color: white;
+    /* --swiper-pagination-bullet-border-radius:0.4; */
+    --swiper-pagination-bullet-inactive-opacity: 0.5;
+    /* --swiper-pagination-top: calc(1 * var(--pw)); */
+    --swiper-pagination-bottom: calc(1 * var(--pw));
+    --swiper-navigation-size: calc(5 * var(--pw));
+    --swiper-navigation-color: white;
+
+    padding: calc(1.5 * var(--pw));
+  }
+
+  .swiper {
+    height: var(--swiper-height);
+    width: var(--swiper-width);
+  }
+  .swiper-slide {
+    cursor: pointer;
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    user-select: none;
+    pointer-events: visible;
+
+    border-radius: calc(1 * var(--pw));
+    border: min(calc(0.2 * var(--pw)), 1.5px) solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0px 0px calc(3 * var(--pw)) rgba(0, 0, 0, 0.05);
+    background-color: rgba(250, 0250, 250, 0.1);
+
+    height: calc(46 * var(--pw)) !important;
+    font-size: calc(3 * var(--pw));
+    flex-direction: column;
+    padding: calc(2 * var(--pw));
+    text-align: center;
+  }
+
+  .swiper-slide-icon {
+    font-size: calc(5 * var(--pw));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(2 * var(--pw));
+  }
+
+  .secondary-slide-text {
+    font-size: calc(1.5 * var(--pw));
+    margin-top: calc(1 * var(--pw));
+  }
+  .swiper-slide-button {
+    font-size: calc(3 * var(--pw));
+    cursor: pointer;
+    pointer-events: visible;
+    padding: calc(0.5 * var(--pw)) calc(1 * var(--pw));
+    border-radius: calc(0.5 * var(--pw));
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid white;
+    margin-top: auto;
+    margin-bottom: calc(2 * var(--pw));
+  }
+
+  .screen {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    backdrop-filter: blur(5px) brightness(0.7);
+    -webkit-backdrop-filter: blur(5px) brightness(0.7);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .screen .screen-card {
+    display: inline-block;
+    line-height: 1.2;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  .screen-1-header {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: calc(3.5 * var(--pw));
+    font-weight: 700;
+    margin-bottom: calc(1 * var(--pw));
+    height: calc(5 * var(--pw));
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    pointer-events: visible;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 79em) and (orientation: portrait) {
+    /* CSS rules here */
+
+    .secondary-slide-text {
+      font-size: calc(3 * var(--pw));
+    }
+    .primary-slide-text {
+      font-size: calc(4.5 * var(--pw));
+    }
+    .swiper-slide-button {
+      font-size: calc(4 * var(--pw));
+      border-radius: calc(1 * var(--pw));
+    }
+    .enrollment-slide-button {
+      margin-top: calc(1.5 * var(--pw));
+    }
+  }
+</style>
+
+<script
+  type="text/javascript"
+  src="https://assets.zencite.com/orca/media/embed/videofront-vega.js"
+></script>
+
+<!-- <script src="assets/markupView.js"></script>
+<script src="assets/markupWidget.js"></script> -->
+
+<!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/GSDevTools3.min.js"></script> -->
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
